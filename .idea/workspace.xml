@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:farmie" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8660bf4-2c40-429e-b72d-4cff8ad610f4" name="Default Changelist" comment="" />
+    <list default="true" id="dcf38e9b-b5d1-4b3d-a8dc-c4dbd191b07d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -123,8 +174,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\farm\public\img\socialm" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\farm\public\img" />
+      <recent name="C:\xampp\htdocs\farm\public\img\header_logo" />
       <recent name="C:\xampp\htdocs\farm\public\css" />
       <recent name="C:\xampp\htdocs\farm\public\css\fonts" />
       <recent name="C:\xampp\htdocs\farm\public\js" />
@@ -141,23 +196,48 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f8660bf4-2c40-429e-b72d-4cff8ad610f4" name="Default Changelist" comment="" />
+      <changelist id="dcf38e9b-b5d1-4b3d-a8dc-c4dbd191b07d" name="Default Changelist" comment="" />
       <created>1590607811846</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590607811846</updated>
       <workItem from="1590607831099" duration="38000" />
       <workItem from="1590607886669" duration="4976000" />
+      <workItem from="1590652585218" duration="12846000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1590607869829">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1590652582884">
+      <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590607869829" />
+    <state x="569" y="165" key="FileChooserDialogImpl/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1590652582884" />
+    <state x="1680" y="-63" width="1244" height="998" key="dock-window-1" timestamp="1590659300186">
+      <screen x="1680" y="-63" width="1680" height="1010" />
+    </state>
+    <state x="1680" y="-63" width="1244" height="998" key="dock-window-1/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1590659300186" />
+    <state x="1680" y="-63" width="1244" height="998" maximized="true" key="dock-window-2" timestamp="1590659300187">
+      <screen x="1680" y="-63" width="1680" height="1010" />
+    </state>
+    <state x="1680" y="-63" width="1244" height="998" maximized="true" key="dock-window-2/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1590659300187" />
+    <state x="1680" y="-63" width="1244" height="998" key="dock-window-3" timestamp="1590668908294">
+      <screen x="1680" y="-63" width="1680" height="1010" />
+    </state>
+    <state x="1680" y="-63" width="1244" height="998" key="dock-window-3/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1590668908294" />
   </component>
 </project>
