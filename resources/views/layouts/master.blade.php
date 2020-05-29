@@ -85,7 +85,7 @@
                         </div>
                         <!-- Navbar Start -->
                         <div class="classynav">
-                            <ul>
+                            <ul class="menunav">
                                 <li class="active"><a href="{{route('welcome')}}">Home</a></li>
                                 <li><a href="{{route('about')}}">About</a></li>
                                 <li><a href="#">Pages</a>
@@ -110,6 +110,22 @@
                                 </li>
                                 <li><a href="our-product.html">Our Product</a></li>
                                 <li><a href="shop.html">Shop</a></li>
+                                @auth
+                                    <li>
+                                        <a  href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+                                    </li>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" >
+                                        @csrf
+                                    </form>
+                                @else
+                                    <li><a href="{{route('register')}}">Register</a></li>
+                                    <li><a href="{{route('login')}}">Login</a></li>
+                                @endauth
 
                             </ul>
                             <!-- Search Icon -->
