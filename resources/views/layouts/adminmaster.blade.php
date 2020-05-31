@@ -79,16 +79,17 @@
                             <span class="title">Products</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-chart-pie"></i></span>
-                            <span class="title">Charts</span>
-                        </a>
-                    </li>
+
                     <li>
                         <a href="#">
                             <span class="icon"><i class="fas fa-border-all"></i></span>
                             <span class="title">Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('users.index')}}">
+                            <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
+                            <span class="title">Users</span>
                         </a>
                     </li>
                 </ul>
@@ -102,17 +103,7 @@
 </div>
 
 <script src="{{asset('js/jquery.min.js')}}"></script>
-<script>
-    $(document).ready(function(){
-        $(".hamburger .hamburger__inner").click(function(){
-            $(".wrapper").toggleClass("active")
-        })
-
-        $(".top_navbar .toggleProfile").click(function(){
-            $(".profile_dd").toggleClass("active");
-        });
-    })
-</script>
+<script src="{{asset('js/myscript.js')}}"></script>
 
 </body>
 </html>

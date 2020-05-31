@@ -20,3 +20,5 @@ Route::get('/about','WelcomeController@about')->name('about');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/users','UsersController');
