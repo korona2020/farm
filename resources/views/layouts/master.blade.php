@@ -72,8 +72,12 @@
                 <!-- Menu -->
                 <nav class="classy-navbar justify-content-between" id="famieNav">
                     <!-- Nav Brand -->
-                    <a href="{{route('welcome')}}" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-                    <!-- Navbar Toggler -->
+                    @auth
+                        <a href="{{route('home')}}" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                    @else
+                        <a href="{{route('welcome')}}" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                    @endauth
+                        <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
                         <span class="navbarToggler"><span></span><span></span><span></span></span>
                     </div>

@@ -42,13 +42,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dcf38e9b-b5d1-4b3d-a8dc-c4dbd191b07d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +60,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -178,7 +175,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../organic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -186,11 +184,11 @@
       <recent name="C:\xampp\htdocs\farm\public\img\socialm" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\farm\public\js" />
+      <recent name="C:\xampp\htdocs\farm\public\css" />
       <recent name="C:\xampp\htdocs\farm\public\img" />
       <recent name="C:\xampp\htdocs\farm\public\img\header_logo" />
-      <recent name="C:\xampp\htdocs\farm\public\css" />
       <recent name="C:\xampp\htdocs\farm\public\css\fonts" />
-      <recent name="C:\xampp\htdocs\farm\public\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -213,6 +211,11 @@
       <workItem from="1590607886669" duration="4976000" />
       <workItem from="1590652585218" duration="13399000" />
       <workItem from="1590737341478" duration="11511000" />
+      <workItem from="1590766159844" duration="2180000" />
+      <workItem from="1590780068008" duration="519000" />
+      <workItem from="1590861663904" duration="741000" />
+      <workItem from="1590909299829" duration="5603000" />
+      <workItem from="1590928114726" duration="7631000" />
     </task>
     <servers />
   </component>
@@ -232,11 +235,27 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1590738617863">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1590767276640">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590607869829" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590767276640" />
     <state x="569" y="165" key="FileChooserDialogImpl/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1590738617863" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590766611711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590766611711" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590766611711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590766611711" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590766611711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590766611711" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590766611711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590766611711" />
     <state x="1680" y="-63" width="1244" height="998" key="dock-window-1" timestamp="1590659300186">
       <screen x="1680" y="-63" width="1680" height="1010" />
     </state>
