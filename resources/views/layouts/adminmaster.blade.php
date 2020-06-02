@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>ZereFarm</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
-
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mdb.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/datatables.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/adminstyle.css')}}">
+
+
 
 </head>
 <body>
@@ -60,7 +68,8 @@
                         <p class="profile_name">{{auth()->user()->name}}</p>
                     </div>
                 </div>
-                <ul>
+
+               <ul class="mainmenu">
                     <li>
                         <a href="#" class="active">
                             <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
@@ -72,7 +81,9 @@
                             <span class="icon"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
                             <span class="title">Categories</span>
                         </a>
+
                     </li>
+
                     <li>
                         <a href="#">
                             <span class="icon"></span>
@@ -92,7 +103,10 @@
                             <span class="title">Users</span>
                         </a>
                     </li>
+
                 </ul>
+
+
             </div>
         </div>
         <div class="container">
@@ -103,7 +117,9 @@
 </div>
 
 <script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/datatables.min.js')}}"></script>
 <script src="{{asset('js/myscript.js')}}"></script>
+
 
 </body>
 </html>

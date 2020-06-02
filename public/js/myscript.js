@@ -7,9 +7,8 @@ $(document).ready(function(){
         $(".profile_dd").toggleClass("active");
     });
 
-    $('ul li a' ).click(function(){
-       console.log('yes');
-    });
+    $('#dtHorizontalExample').DataTable({"scrollX": true});
+    $('.dataTables_length').addClass('bs-select');
 })
 
 
