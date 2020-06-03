@@ -69,19 +69,34 @@
                     </div>
                 </div>
 
-               <ul class="mainmenu">
+                <ul class="list-unstyled components">
                     <li>
                         <a href="#" class="active">
                             <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
                             <span class="title">Dashboard</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href="#">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <span class="icon"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
                             <span class="title">Categories</span>
                         </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="{{route('categories.index')}}">
+                                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                    <span class="title">All Categories</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{route('categories.create')}}">
+                                    <span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="title">Create Category</span>
+                                </a>
+                            </li>
 
+                        </ul>
                     </li>
 
                     <li>
@@ -110,6 +125,11 @@
             </div>
         </div>
         <div class="container">
+            @if(session()->has('success'))
+                <div class="alert alert-success">
+                    {{session('success')}}
+                </div>
+            @endif
             @yield('content')
         </div>
     </div>
@@ -118,8 +138,29 @@
 
 <script src="{{asset('js/jquery.min.js')}}"></script>
 <script src="{{asset('js/datatables.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/myscript.js')}}"></script>
+<script>
+    $(function(){
+        let current = location.pathname;
+        $('.components li a').each(function(){
+            let $this = $(this);
+            // if the current path is like this link, make it active
+            if($this.attr('href').indexOf(current) !== -1){
+                $('a').removeClass('active');
+                $this.addClass('active');
+            }
 
+        })
+        $('.menu-item').click(function(event) {
+            if($(this).closest("li.menu-item").children("ul.sub-menu").length > 0)
+            {
+                $('.sub-menu').slideToggle('fast');
+                return false;
+            }
+        });
+    })
+</script>
 
 </body>
 </html>
