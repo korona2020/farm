@@ -7,6 +7,7 @@
         All Categories
     </div>
     <div class="card-body">
+        @if($categories->count() > 0)
         <table id="dtHorizontalExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
             <thead>
             <tr>
@@ -20,7 +21,14 @@
             @foreach($categories as $category)
                 <tr>
                     <td>{{$category->name}}</td>
-                    <td></td>
+                    <td colspan="2">
+                        <a href="{{route('categories.edit',$category->id)}}" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit"></i>Edit
+                        </a>
+                        <span class="ml-4">
+                            <button onclick="handleDelete({{$category->id}})" class="btn btn-danger btn-sm"> <i class="fa fa-trash" aria-hidden="true"></i>Delete</button>
+                        </span>
+                    </td>
 
                 </tr>
             @endforeach
@@ -33,6 +41,15 @@
             </tr>
             </tfoot>
         </table>
+            @include('partials.deletemodal')
+        @else
+        <p>No categories found
+            <a href="{{route('categories.create')}}" class="btn btn-success">Create</a>
+        </p>
+        @endif
+
+
     </div>
+
 </div>
 @endsection

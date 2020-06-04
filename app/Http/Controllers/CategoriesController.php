@@ -66,11 +66,15 @@ class CategoriesController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id)
     {
         //
+        $category = Category::findOrFail($id);
+
+        return view('categories.create')
+            ->with('category', $category);
     }
 
     /**
@@ -78,21 +82,35 @@ class CategoriesController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, $id)
+    public function update(CategoriesRequest $request, $id)
     {
         //
+        $category = Category::findOrFail($id);
+
+        $category->update(['name'=>$request->name]);
+
+        session()->flash('success','Category was successfully updated');
+
+        return redirect(route('categories.index'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
         //
+        $category = Category::findOrFail($id);
+        $category->delete();
+
+        session()->flash('success', 'Category was successfully deleted');
+
+        return redirect()->back();
+
     }
 }

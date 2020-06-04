@@ -71,18 +71,18 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#" class="active">
+                        <a href="{{route('home')}}" class="active">
                             <span class="icon"><i class="fa fa-tachometer" aria-hidden="true"></i></span>
                             <span class="title">Dashboard</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <a href="#categoriesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                             <span class="icon"><i class="fa fa-list-alt" aria-hidden="true"></i></span>
                             <span class="title">Categories</span>
                         </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <ul class="collapse list-unstyled" id="categoriesSubmenu">
                             <li>
                                 <a href="{{route('categories.index')}}">
                                     <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
@@ -100,18 +100,27 @@
                     </li>
 
                     <li>
-                        <a href="#">
-                            <span class="icon"></span>
+                        <a href="#productsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <span class="icon"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
                             <span class="title">Products</span>
                         </a>
+                        <ul class="collapse list-unstyled" id="productsSubmenu">
+                            <li>
+                                <a href="{{route('products.index')}}">
+                                    <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                    <span class="title">All Products</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{route('products.create')}}">
+                                    <span class="icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    <span class="title">Add Product</span>
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
 
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="fas fa-border-all"></i></span>
-                            <span class="title">Tables</span>
-                        </a>
-                    </li>
                     <li>
                         <a href="{{route('users.index')}}">
                             <span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span>
@@ -141,26 +150,7 @@
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/myscript.js')}}"></script>
 <script>
-    $(function(){
-        let current = location.pathname;
-        $('.components li a').each(function(){
-            let $this = $(this);
-            // if the current path is like this link, make it active
-            if($this.attr('href').indexOf(current) !== -1){
-                $('a').removeClass('active');
-                $this.addClass('active');
-            }
 
-        })
-        $('.menu-item').click(function(event) {
-            if($(this).closest("li.menu-item").children("ul.sub-menu").length > 0)
-            {
-                $('.sub-menu').slideToggle('fast');
-                return false;
-            }
-        });
-    })
 </script>
-
 </body>
 </html>

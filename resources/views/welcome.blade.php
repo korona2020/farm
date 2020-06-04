@@ -625,8 +625,8 @@
                 <!-- Contact Maps -->
                 <div class="col-lg-6">
                     <div class="contact-maps mb-100">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28313.28917392649!2d-88.2740948914384!3d41.76219337461615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880efa1199df6109%3A0x8a1293b2ae8e0497!2sE+New+York+St%2C+Aurora%2C+IL%2C+USA!5e0!3m2!1sen!2sbd!4v1542893000723"
-                                allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6086.11823585691!2d20.465453327467603!3d40.29664630048055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135a5b83141da7d3%3A0xcb7f5b67d885055f!2sGostivisht%2C%20Albania!5e0!3m2!1sen!2s!4v1591267165268!5m2!1sen!2s"
+                        allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
