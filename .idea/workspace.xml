@@ -41,15 +41,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf38e9b-b5d1-4b3d-a8dc-c4dbd191b07d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/farm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/farm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_29_113843_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_29_113843_create_products_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +184,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../forum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -233,7 +229,8 @@
       <workItem from="1591087113422" duration="12801000" />
       <workItem from="1591169328668" duration="13516000" />
       <workItem from="1591257305013" duration="14670000" />
-      <workItem from="1591346878723" duration="14754000" />
+      <workItem from="1591346878723" duration="16304000" />
+      <workItem from="1591366584050" duration="859000" />
     </task>
     <servers />
   </component>
@@ -257,6 +254,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1591350499885" />
+    <state x="654" y="386" key="ComposerDumpAutoloadDialog" timestamp="1591364527939">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="654" y="386" key="ComposerDumpAutoloadDialog/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1591364527939" />
     <state x="2298" y="375" key="ComposerInitDialogKey" timestamp="1591359386377">
       <screen x="1680" y="-63" width="1680" height="1010" />
     </state>

@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Intervention\Image\ImageManagerStatic as Image;
 use App\Category;
 use App\Http\Requests\ProductsRequest;
 use App\Product;
 use Illuminate\Support\Str;
-use Intervention\Image\Facades\Image;
+
+
 
 
 class ProductsController extends Controller
@@ -43,17 +44,27 @@ class ProductsController extends Controller
     public function store(ProductsRequest $request)
     {
 
+        if($request->hasFile('image')) {
+
+            $image       = $request->file('image');
+            $filename    = $image->getClientOriginalName();
+
+            $image_resize = Image::make($image->getRealPath());
+            $image_resize->resize(100, 100);
+            $image_resize->save(public_path('img/products/' .$filename));
+
+        }
 
 
         //create new product
-        $product = Product::create([
+         Product::create([
             'name'=>$request->name,
             'slug'=>Str::slug($request->name),
             'price'=>$request->price,
             'discount'=>$request->discount,
             'unit'=>$request->unit,
             'category_id'=>$request->category_id,
-            'image'=>$image,
+            'image'=>$filename
 
         ]);
 
