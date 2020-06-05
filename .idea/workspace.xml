@@ -41,16 +41,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dcf38e9b-b5d1-4b3d-a8dc-c4dbd191b07d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/farm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/farm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_29_113843_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_29_113843_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/myscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/categories/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/categories/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/adminmaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/adminmaster.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -170,6 +170,12 @@
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1cVJQ6UWP6Dn2mrLD1jZAu8R3R5" />
@@ -182,7 +188,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../forum" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -226,7 +232,8 @@
       <workItem from="1590948548906" duration="4958000" />
       <workItem from="1591087113422" duration="12801000" />
       <workItem from="1591169328668" duration="13516000" />
-      <workItem from="1591257305013" duration="13335000" />
+      <workItem from="1591257305013" duration="14670000" />
+      <workItem from="1591346878723" duration="14754000" />
     </task>
     <servers />
   </component>
@@ -246,11 +253,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1591187091977">
+    <state x="570" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1591350499885">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="259" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1591350499885" />
+    <state x="2298" y="375" key="ComposerInitDialogKey" timestamp="1591359386377">
+      <screen x="1680" y="-63" width="1680" height="1010" />
+    </state>
+    <state x="2298" y="375" key="ComposerInitDialogKey/1680.-63.1680.1010/0.0.1680.1010@1680.-63.1680.1010" timestamp="1591359386377" />
+    <state x="569" y="165" key="FileChooserDialogImpl" timestamp="1591347784671">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590767276640" />
-    <state x="569" y="165" key="FileChooserDialogImpl/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1591187091977" />
+    <state x="569" y="165" key="FileChooserDialogImpl/1680.-63.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1591347784671" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590766611711">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -267,6 +282,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590766611711" />
+    <state x="2310" y="185" key="NewPhpClassDialog" timestamp="1591355149127">
+      <screen x="1680" y="-63" width="1680" height="1010" />
+    </state>
+    <state x="2310" y="185" key="NewPhpClassDialog/1680.-63.1680.1010/0.0.1680.1010@1680.-63.1680.1010" timestamp="1591355149127" />
     <state x="1680" y="-63" width="1244" height="998" key="dock-window-1" timestamp="1590659300186">
       <screen x="1680" y="-63" width="1680" height="1010" />
     </state>

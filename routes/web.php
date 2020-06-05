@@ -24,3 +24,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/users','UsersController');
 Route::resource('/categories','CategoriesController');
 Route::resource('/products','ProductsController');
+
+

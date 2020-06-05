@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Category;
+use App\Http\Requests\ProductsRequest;
+use App\Product;
+use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
+
 
 class ProductsController extends Controller
 {
@@ -25,18 +30,39 @@ class ProductsController extends Controller
     public function create()
     {
         //
-        return view('products.create');
+        $categories = Category::pluck('name','id');
+        return view('products.create')->with('categories', $categories);
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function store(Request $request)
+    public function store(ProductsRequest $request)
     {
-        //
+
+
+
+        //create new product
+        $product = Product::create([
+            'name'=>$request->name,
+            'slug'=>Str::slug($request->name),
+            'price'=>$request->price,
+            'discount'=>$request->discount,
+            'unit'=>$request->unit,
+            'category_id'=>$request->category_id,
+            'image'=>$image,
+
+        ]);
+
+
+        //flash message
+        session()->flash('success','Produkti u shtua me sukses');
+
+        //redirect
+        return redirect(route('products.index'));
     }
 
     /**
