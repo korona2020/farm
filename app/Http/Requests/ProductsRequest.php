@@ -28,6 +28,7 @@ class ProductsRequest extends FormRequest
             'name'=>'required|min:3',
             'price'=>'required|between:0,99.99',
             'unit'=>'required',
+            'discount'=>'required',
             'category_id'=>'required',
             'description'=>'required',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',

@@ -4,10 +4,10 @@
 
     <div class="card">
 
-        <div class="card-header">Shto Produkt</div>
+        <div class="card-header">Edito Produkt</div>
 
         <div class="card-body">
-            {!! Form::open(['route'=>'products.store','files'=>true]) !!}
+            {!! Form::model($product,['method'=>'PUT', 'route'=>['products.update',$product->id],'files'=>true]) !!}
             <div class="form-group">
                 {!! Form::label('name','Emertimi') !!}
                 {!! Form::text('name',null,['class'=>'form-control']) !!}
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 {!! Form::label('discount','Zbritje (%)') !!}
-                {!! Form::number('discount', 0, ['class' => 'form-control','min'=>0]) !!}
+                {!! Form::number('discount', null, ['class' => 'form-control','min'=>0]) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('unit','Njesia (kg)') !!}
@@ -36,7 +36,7 @@
                 {!! Form::file('image',null, ['class'=>'form-control']) !!}
             </div>
             <div class="form-group">
-                {!! Form::submit('Shto Produkt',['class'=>'btn btn-success']) !!}
+                {!! Form::submit('Edito Produkt',['class'=>'btn btn-success']) !!}
             </div>
 
             {!! Form::close() !!}

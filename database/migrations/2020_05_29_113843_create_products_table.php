@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('slug');
             $table->decimal('price',7,2);
             $table->decimal('old_price',7,2)->default(0);
-            $table->unsignedInteger('discount')->default(0);
+            $table->integer('discount')->unsigned()->default(0);
             $table->string('unit')->nullable();
             $table->string('image');
             $table->text('description')->nullable();

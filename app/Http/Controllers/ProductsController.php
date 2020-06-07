@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManagerStatic as Image;
 use App\Category;
 use App\Http\Requests\ProductsRequest;
@@ -20,7 +21,8 @@ class ProductsController extends Controller
     public function index()
     {
         //
-        return view('products.index');
+        return view('products.index')
+                ->with('products', Product::all());
     }
 
     /**
@@ -44,31 +46,31 @@ class ProductsController extends Controller
     public function store(ProductsRequest $request)
     {
 
-        if($request->hasFile('image')) {
+        if($request->hasFile('image'))
+        {
 
-            $image       = $request->file('image');
-            $filename    = $image->getClientOriginalName();
+            $image = $request->file('image');
+            $filename = $image->getClientOriginalName();
 
             $image_resize = Image::make($image->getRealPath());
             $image_resize->resize(100, 100);
-            $image_resize->save(public_path('img/products/' .$filename));
+            $image_resize->save(public_path('img/products/' . $filename));
+
+
+            //create new product
+            Product::create([
+                'name' => $request->name,
+                'slug' => Str::slug($request->name),
+                'price' => $request->price,
+                'discount' => $request->discount,
+                'unit' => $request->unit,
+                'category_id' => $request->category_id,
+                'description'=>$request->description,
+                'image' => $filename
+
+            ]);
 
         }
-
-
-        //create new product
-         Product::create([
-            'name'=>$request->name,
-            'slug'=>Str::slug($request->name),
-            'price'=>$request->price,
-            'discount'=>$request->discount,
-            'unit'=>$request->unit,
-            'category_id'=>$request->category_id,
-            'image'=>$filename
-
-        ]);
-
-
         //flash message
         session()->flash('success','Produkti u shtua me sukses');
 
@@ -91,11 +93,15 @@ class ProductsController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id)
     {
         //
+        $product = Product::findOrFail($id);
+        return view('products.edit')
+            ->with('product',$product)
+            ->with('categories',Category::pluck('name','id'));
     }
 
     /**
@@ -103,11 +109,44 @@ class ProductsController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, $id)
+    public function update(ProductsRequest $request, $id)
     {
         //
+        $product = Product::findOrFail($id);
+        $old_image = $product->image;
+        if($request->hasFile('image'))
+        {
+
+            $image = $request->file('image');
+            $filename = $image->getClientOriginalName();
+
+            $image_resize = Image::make($image->getRealPath());
+            $image_resize->resize(100, 100);
+            $image_resize->save(public_path('img/products/' . $filename));
+
+            unlink(public_path('img/products/') . $old_image);
+
+            //update product
+            $product->update([
+                'name' => $request->name,
+                'slug' => Str::slug($request->name),
+                'price' => $request->price,
+                'discount' => $request->discount,
+                'unit' => $request->unit,
+                'category_id' => $request->category_id,
+                'description'=>$request->description,
+                'image' => $filename
+
+            ]);
+
+        }
+        //flash message
+        session()->flash('success','Produkti u editua me sukses');
+
+        //redirect
+        return redirect(route('products.index'));
     }
 
     /**
