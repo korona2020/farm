@@ -113,7 +113,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="our-product.html">Our Product</a></li>
-                                <li><a href="{{}}">Shop</a></li>
+                                <li><a href="{{route('shop')}}">Shop</a></li>
                                 @auth
                                     <li>
                                         <a  href="{{ route('logout') }}"

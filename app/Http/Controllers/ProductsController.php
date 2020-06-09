@@ -118,15 +118,15 @@ class ProductsController extends Controller
         $old_image = $product->image;
         if($request->hasFile('image'))
         {
-
+            unlink(public_path('img/products/') . $old_image);
             $image = $request->file('image');
             $filename = $image->getClientOriginalName();
 
             $image_resize = Image::make($image->getRealPath());
-            $image_resize->resize(100, 100);
+            $image_resize->resize(270, 350);
             $image_resize->save(public_path('img/products/' . $filename));
 
-            unlink(public_path('img/products/') . $old_image);
+
 
             //update product
             $product->update([

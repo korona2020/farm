@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','WelcomeController@index')->name('welcome');
 Route::get('/about','WelcomeController@about')->name('about');
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -24,5 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/users','UsersController');
 Route::resource('/categories','CategoriesController');
 Route::resource('/products','ProductsController');
+
+Route::get('/shop','ShopController@index')->name('shop');
 
 
