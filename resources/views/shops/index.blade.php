@@ -19,7 +19,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                    <li class="breadcrumb-item active" aria-current="page">All Categories</li>
                 </ol>
             </nav>
         </div>
@@ -27,28 +27,22 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
     <!-- ##### Shop Area Start ##### -->
-    <section class="shop-area section-padding-0-100">
+    <section class="shop-area">
         <div class="container">
-
             <div class="row">
                 <!-- Shop Filters -->
                 <div class="col-12">
-                    <div class="shop-filters mb-30 d-flex align-items-center justify-content-between">
-                        <!-- Product Show -->
-                        <div class="product-show">
-                            <h6>Showing 1–9 of 72 results</h6>
-                        </div>
-
-                        <!-- Product View Mode -->
-                        <div class="produtc-view-mode">
-                            <a href="#"><i class="fa fa-th"></i></a>
-                            <a href="#"><i class="fa fa-list-ul"></i></a>
-                        </div>
-                    </div>
+                    <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link active" href="{{route('shop')}}">All Products</a>
+                        @foreach($categories as $category)
+                            <a class="flex-sm-fill text-sm-center nav-link" href="#">{{$category->name}}</a>
+                        @endforeach
+                    </nav>
                 </div>
+
             </div>
 
-            <div class="row">
+            <div class="row my-lg-5">
                 <!-- Shop Sidebar Area -->
                 <div class="col-12 col-md-4 col-lg-3">
 
@@ -128,49 +122,6 @@
                         </ul>
                     </div>
 
-                    <!-- Single Widget Area -->
-                    <div class="single-widget-area">
-                        <!-- Title -->
-                        <h5 class="widget-title">Sort by</h5>
-                        <!-- Cata List -->
-                        <ul class="cata-list shop-page">
-                            <li><a href="#">Top rated</a></li>
-                            <li><a href="#">New arrivals</a></li>
-                            <li><a href="#">Alphabetically, A-Z</a></li>
-                            <li><a href="#">Alphabetically, Z-A</a></li>
-                            <li><a href="#">Price: low to high</a></li>
-                            <li><a href="#">Price: high to low</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Single Widget Area -->
-                    <div class="single-widget-area">
-                        <!-- Title -->
-                        <h5 class="widget-title">Price</h5>
-                        <!-- Cata List -->
-                        <ul class="cata-list shop-page">
-                            <li><a href="#">$0.00 - $10.00</a></li>
-                            <li><a href="#">$10.00 - $50.00</a></li>
-                            <li><a href="#">$50.00 - $100.00</a></li>
-                            <li><a href="#">$100.00+</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Single Widget Area -->
-                    <div class="single-widget-area">
-                        <!-- Title -->
-                        <h5 class="widget-title">Tags</h5>
-                        <!-- Tags -->
-                        <ul class="famie-tags">
-                            <li><a href="#">All product</a></li>
-                            <li><a href="#">Freshy Fruit</a></li>
-                            <li><a href="#">Sweet Corn</a></li>
-                            <li><a href="#">Chicken</a></li>
-                            <li><a href="#">Organic</a></li>
-                            <li><a href="#">Meat</a></li>
-                        </ul>
-                    </div>
-
                 </div>
 
                 <!-- Shop Products Area -->
@@ -216,6 +167,7 @@
                     <!-- Pagination -->
                     <nav>
                         <ul class="pagination mb-0 mt-50">
+                            <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>

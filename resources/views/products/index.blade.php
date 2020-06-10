@@ -4,7 +4,7 @@
 
     <div class="card">
         <div class="card-header">
-            All Categories
+            All Products
         </div>
         <div class="card-body">
             @if($products->count() > 0)

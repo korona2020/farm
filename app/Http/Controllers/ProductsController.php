@@ -53,7 +53,7 @@ class ProductsController extends Controller
             $filename = $image->getClientOriginalName();
 
             $image_resize = Image::make($image->getRealPath());
-            $image_resize->resize(100, 100);
+            $image_resize->resize(270, 350);
             $image_resize->save(public_path('img/products/' . $filename));
 
 
@@ -125,7 +125,6 @@ class ProductsController extends Controller
             $image_resize = Image::make($image->getRealPath());
             $image_resize->resize(270, 350);
             $image_resize->save(public_path('img/products/' . $filename));
-
 
 
             //update product
